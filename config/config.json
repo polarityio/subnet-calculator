@@ -1,0 +1,31 @@
+{
+  "polarityIntegrationUuid": "a977d420-62fb-11ee-bdcc-bd3c49e7fe6a",
+  "name": "Subnet Calculator",
+  "acronym": "SUBNET",
+  "defaultColor": "light-gray",
+  "description": "Integration that can determine network details for an IPv4 subnet, given an address in CIDR notation",
+  "entityTypes": [
+    "IPv4CIDR"
+  ],
+  "styles": [
+    "./styles/styles.less"
+  ],
+  "block": {
+    "component": {
+      "file": "./components/block.js"
+    },
+    "template": {
+      "file": "./templates/block.hbs"
+    }
+  },
+  "request": {
+    "cert": "",
+    "key": "",
+    "passphrase": "",
+    "ca": "",
+    "proxy": ""
+  },
+  "logging": {
+    "level": "info"
+  }
+}
