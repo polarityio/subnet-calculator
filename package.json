@@ -1,0 +1,9 @@
+{
+  "name": "subnet-calculator",
+  "version": "3.0.0",
+  "main": "./integration.js",
+  "private": true,
+  "dependencies": {
+    "ip": "^1.1.5"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "polarityIntegrationUuid": "0c53f360-ccc7-11ed-bd45-6147db7ef4b1",
+  "name": "CVE Search",
+  "acronym": "CVE",
+  "defaultColor": "light-pink",
+  "description": "Integration that can search CVE numbers hosted on cve-search servers",
+  "entityTypes": [
+    "cve"
+  ],
+  "styles": [
+    "./styles/cve.less"
+  ],
+  "block": {
+    "component": {
+      "file": "./components/cve-block.js"
+    },
+    "template": {
+      "file": "./templates/cve-block.hbs"
+    }
+  },
+  "request": {
+    "cert": "",
+    "key": "",
+    "passphrase": "",
+    "ca": "",
+    "proxy": "",
+    "rejectUnauthorized": true
+  },
+  "logging": {
+    "level": "info"
+  },
+  "options": [
+    {
+      "key": "url",
+      "name": "Server URL",
+      "description": "Your CVE Search server URL including schema and port. This option should be set to \"Users can view only\"",
+      "default": "https://cve.circl.lu",
+      "type": "text",
+      "userCanEdit": false,
+      "adminOnly": true
+    }
+  ]
+}

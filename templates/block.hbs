@@ -1,0 +1,55 @@
+<div class="d-flex align-items-center justify-content-end copy-btn-container">
+  <button
+          class="btn copy-btn p-action"
+    {{action "copyData"}}
+          title="Copy Information to Clipboard"
+  >
+    {{fa-icon icon="clipboard" fixedWidth=true}}
+  </button>
+  <div class="copy-success-message {{if showCopyMessage 'visible' 'hidden'}}">
+    {{fa-icon icon="check" fixedWidth=true class="copy-success-icon"}}
+    Copied Information.
+  </div>
+</div>
+
+<div id={{concat "subnet-container-" uniqueIdPrefix}}>
+  <div>
+    <h1 class="p-title">{{fa-icon "network-wired" fixedWidth=true}} Network Info</h1>
+    <div>
+      <span class="p-key">Network Address:</span>
+      <span class="p-value">{{details.networkAddress}}</span>
+    </div>
+    <div>
+      <span class="p-key">Broadcast Address:</span>
+      <span class="p-value">{{details.broadcastAddress}}</span>
+    </div>
+    <div>
+      <span class="p-key">Subnet Bits:</span>
+      <span class="p-value">{{details.subnetMaskLength}}</span>
+    </div>
+    <div>
+      <span class="p-key">Subnet Mask:</span>
+      <span class="p-value">{{details.subnetMask}}</span>
+    </div>
+      <div>
+      <span class="p-key">Wildcard Mask:</span>
+      <span class="p-value">{{details.wildcardMask}}</span>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="p-title">{{fa-icon "desktop" fixedWidth=true}} Hosts Info</h1>
+    <div>
+      <span class="p-key">Number of Assignable Hosts:</span>
+      <span class="p-value">{{details.numHosts}}</span>
+    </div>
+    <div>
+      <span class="p-key">First Assignable Host Address:</span>
+      <span class="p-value">{{details.firstAddress}}</span>
+    </div>
+    <div>
+      <span class="p-key">Last Assignable Host Address:</span>
+      <span class="p-value">{{details.lastAddress}}</span>
+    </div>
+  </div>
+</div>
