@@ -1,21 +1,20 @@
 {
-  "polarityIntegrationUuid": "0c53f360-ccc7-11ed-bd45-6147db7ef4b1",
-  "name": "CVE Search",
-  "acronym": "CVE",
-  "defaultColor": "light-pink",
-  "description": "Integration that can search CVE numbers hosted on cve-search servers",
+  "name": "Subnet Calculator",
+  "acronym": "SUBNET",
+  "defaultColor": "light-gray",
+  "description": "Integration that can determine network details for an IPv4 subnet, given an address in CIDR notation",
   "entityTypes": [
-    "cve"
+    "IPv4CIDR"
   ],
   "styles": [
-    "./styles/cve.less"
+    "./styles/styles.less"
   ],
   "block": {
     "component": {
-      "file": "./components/cve-block.js"
+      "file": "./components/block.js"
     },
     "template": {
-      "file": "./templates/cve-block.hbs"
+      "file": "./templates/block.hbs"
     }
   },
   "request": {
@@ -28,16 +27,5 @@
   },
   "logging": {
     "level": "info"
-  },
-  "options": [
-    {
-      "key": "url",
-      "name": "Server URL",
-      "description": "Your CVE Search server URL including schema and port. This option should be set to \"Users can view only\"",
-      "default": "https://cve.circl.lu",
-      "type": "text",
-      "userCanEdit": false,
-      "adminOnly": true
-    }
-  ]
+  }
 }

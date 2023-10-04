@@ -73,6 +73,6 @@ module.exports = {
     rejectUnauthorized: true
   },
   logging: {
-    level: 'trace'//'info' //trace, debug, info, warn, error, fatal
+    level: 'info'//'info' //trace, debug, info, warn, error, fatal
   }
 };
