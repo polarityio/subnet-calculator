@@ -23,7 +23,7 @@ function doLookup(entities, options, cb) {
     lookupResults.push({
       entity,
       data: {
-        summary: [`${ipAttributes.firstAddress} - ${ipAttributes.lastAddress}`],
+        summary: [`${ipAttributes.numHosts} hosts`],
         details: {
           ...ipAttributes,
           wildcardMask: computeWildcardMaskFromSubnetMask(ipAttributes.subnetMask)
