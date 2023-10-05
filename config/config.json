@@ -3,7 +3,7 @@
   "name": "Subnet Calculator",
   "acronym": "SUBNET",
   "defaultColor": "light-gray",
-  "description": "Integration that can determine network details for an IPv4 subnet, given an address in CIDR notation",
+  "description": "Determine network details for an IPv4 subnet given an address in CIDR notation",
   "entityTypes": [
     "IPv4CIDR"
   ],
