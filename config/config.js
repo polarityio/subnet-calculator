@@ -24,7 +24,7 @@ module.exports = {
    * @optional
    */
   description:
-    'Integration that can determine network details for an IPv4 subnet, given an address in CIDR notation',
+    'Determine network details for an IPv4 subnet given an address in CIDR notation',
   entityTypes: ['IPv4CIDR'],
   /**
    * An array of style files (css or less) that will be included for your integration. Any styles specified in
